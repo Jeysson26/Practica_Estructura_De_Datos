@@ -9,6 +9,11 @@
 package Triiborec
 import java.io.*; 
 
+/**
+ *
+ * @author Jeysson
+ */
+
 class GFG { 
 class Triborec { 
 
