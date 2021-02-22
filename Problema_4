@@ -1,0 +1,44 @@
+# Practica_Estructura_De_Datos
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication9;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Jeysson
+ */
+public class JavaApplication9 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner n = new Scanner(System.in);
+        System.out.println("Ingrese la palabra");
+        String sPalabra = n.next();
+        int inc = 0;
+        int des = sPalabra.length()-1;
+        boolean bError = false;
+
+        while ((inc<des) && (!bError)){
+
+    if (sPalabra.charAt(inc)==sPalabra.charAt(des)){
+        inc++;
+        des--;
+    } else {
+        bError = true;
+    }
+        }
+        if (!bError)
+    System.out.println(sPalabra + " es un palindromo");
+        else
+    System.out.println(sPalabra + " no es un palindromo");
+    }
+ 
+}
