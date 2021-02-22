@@ -1,0 +1,57 @@
+# Practica_Estructura_De_Datos
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication9;
+
+/**
+ *
+ * @author Jeysson
+ */
+public class JavaApplication9 {
+
+    /**
+     * @param args the command line arguments
+     */
+
+public static void main(String[] args) {
+  int[] lista = { 50, 21, 6, 97, 18 };
+  int N_numero = 20;
+  int N_posiciones = existeEnArreglo(lista, N_numero);
+  if (N_posiciones == -1) {
+    System.out.println("No se encontro el numero buscado, intente de nuevo");
+  } else {
+    System.out.println("Se encuentra en la posicion : " + N_posiciones);
+  }
+package busquedaDato;
+import java.util.*;
+public class busquedaDato{
+
+    public static void main(String[] args){
+        Scanner Lector = new Scanner(System.in);
+        boolean encontrado = false;
+        int arreglo[], i;
+
+        arreglo = new int[5];
+        for(i=0; i<arreglo.length; i++){
+            arreglo[i] = i+1;
+        }
+        System.out.println("Ingrese el valor que desea buscar: ");
+        int BuscarValor = Lector.nextInt();
+
+        for(i=0; i<arreglo.length; i++){
+            if(arreglo[i] == BuscarValor){
+                encontrado = true;
+                break;
+            }
+        }
+        if(encontrado == true){
+            System.out.println("El valor " + BuscarValor + " se encuentra en el arreglo");
+        }else{
+            System.out.println("El valor " + BuscarValor + " no se encuentra en el arreglo");
+        }
+    }
+}
