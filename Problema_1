@@ -1,0 +1,28 @@
+import java.util.*;
+package mayor_Menor
+public class mayor_Menor {
+package N_men
+public class N_men {
+
+    public static void main(String[] args) {
+
+        Scanner vbl = new Scanner(System.in);
+       
+        System.out.print("Por favor ingrese el tamaño del array: ");
+        int n = vbl.nextInt();
+        int array [] = new int [n];
+       
+        for (int i = 0; i < array.length; i++) {
+            System.out.print("Ingrese dato "+(i+1)+": ");
+            array [i] = vbl.nextInt();
+        }
+       
+        int N_mayor, N_men;
+        N_mayor = N_men = array [0];
+       
+        for (int i = 0; i < array.length; i++) {
+            if(array [i] > N_mayor) {
+               N_mayor = array[i];
+            }
+            if(array[i]<N_men) {
+                N_men = array[i];
